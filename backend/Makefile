@@ -23,11 +23,11 @@ extended_tests:
 # LINTING AND FORMATTING
 ######################
 
-# Define a variable for Python and notebook files.
+# Define a variable for Python files.
 PYTHON_FILES=src/
 MYPY_CACHE=.mypy_cache
 lint format: PYTHON_FILES=.
-lint_diff format_diff: PYTHON_FILES=$(shell git diff --name-only --diff-filter=d main | grep -E '\.py$$|\.ipynb$$')
+lint_diff format_diff: PYTHON_FILES=$(shell git diff --name-only --diff-filter=d main | grep -E '\.py$$')
 lint_package: PYTHON_FILES=src
 lint_tests: PYTHON_FILES=tests
 lint_tests: MYPY_CACHE=.mypy_cache_test
