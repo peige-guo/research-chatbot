@@ -2,7 +2,7 @@
 
 An intelligent AI research assistant powered by DeepSeek and LangGraph that performs multi-step web research with automatic reflection and iteration.
 
-![Agent Architecture](research_agent.png)
+<img src="research_agent.png" alt="Agent Architecture" width="200">
 
 ## Features
 
